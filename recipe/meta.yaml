@@ -42,7 +42,8 @@ test:
     - "\"%R%\" -e \"library('rbibutils')\""  # [win]
 
 about:
-  home: https://geobosh.github.io/rbibutils/ (website), https://github.com/GeoBosh/rbibutils (devel)
+  home: https://geobosh.github.io/rbibutils/
+  dev_url: https://github.com/GeoBosh/rbibutils
   license: GPL-2.0-only
   summary: Converts between a number of bibliography formats, including 'BibTeX', 'BibLaTeX' and 'Bibentry'.  Includes a port of the 'bibutils' utilities by Chris Putnam <https://sourceforge.net/projects/bibutils/>. Supports all bibliography formats and character encodings implemented in 'bibutils'.
   license_family: GPL2
