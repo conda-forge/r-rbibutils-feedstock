@@ -1,4 +1,4 @@
-{% set version = "2.2.9" %}
+{% set version = "2.2.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rbibutils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rbibutils/rbibutils_{{ version }}.tar.gz
-  sha256: b22c07ff916ec338e5a8c6e7e4302f06c9b88d64ee6a59ee4bf5d83a3d5eff86
+  sha256: a6467acad91cd7d62403f5f7da6656d08d7c46bd33fa89c2db368576808c17f7
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,7 +42,8 @@ test:
     - "\"%R%\" -e \"library('rbibutils')\""  # [win]
 
 about:
-  home: https://geobosh.github.io/rbibutils/ (website), https://github.com/GeoBosh/rbibutils (devel)
+  home: https://geobosh.github.io/rbibutils/
+  dev_url: https://github.com/GeoBosh/rbibutils
   license: GPL-2.0-only
   summary: Converts between a number of bibliography formats, including 'BibTeX', 'BibLaTeX' and 'Bibentry'.  Includes a port of the 'bibutils' utilities by Chris Putnam <https://sourceforge.net/projects/bibutils/>. Supports all bibliography formats and character encodings implemented in 'bibutils'.
   license_family: GPL2
