@@ -1,13 +1,15 @@
 About r-rbibutils
 =================
 
-Home: https://geobosh.github.io/rbibutils/ (website), https://github.com/GeoBosh/rbibutils (devel)
+Home: https://geobosh.github.io/rbibutils/
 
 Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rbibutils-feedstock/blob/main/LICENSE.txt)
 
 Summary: Converts between a number of bibliography formats, including 'BibTeX', 'BibLaTeX' and 'Bibentry'.  Includes a port of the 'bibutils' utilities by Chris Putnam <https://sourceforge.net/projects/bibutils/>. Supports all bibliography formats and character encodings implemented in 'bibutils'.
+
+Development: https://github.com/GeoBosh/rbibutils
 
 Current build status
 ====================
