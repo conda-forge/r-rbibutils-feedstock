@@ -1,4 +1,4 @@
-{% set version = "2.2.11" %}
+{% set version = "2.2.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rbibutils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rbibutils/rbibutils_{{ version }}.tar.gz
-  sha256: 85a475082f978f2a010029143c3efcac01236ef600c00d1b9530da68d176e381
+  sha256: 8525d02a8fec9fe438fabeded98fc2873a67eb603c5e353749046dde235352d4
 
 build:
   merge_build_host: true  # [win]
