@@ -3,6 +3,7 @@ About r-rbibutils-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rbibutils-feedstock/blob/main/LICENSE.txt)
 
+
 About r-rbibutils
 -----------------
 
@@ -13,6 +14,7 @@ Package license: GPL-2.0-only
 Summary: Converts between a number of bibliography formats, including 'BibTeX', 'BibLaTeX' and 'Bibentry'.  Includes a port of the 'bibutils' utilities by Chris Putnam <https://sourceforge.net/projects/bibutils/>. Supports all bibliography formats and character encodings implemented in 'bibutils'.
 
 Development: https://github.com/GeoBosh/rbibutils
+
 About r-rbibutils
 -----------------
 
