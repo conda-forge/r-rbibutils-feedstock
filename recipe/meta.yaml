@@ -1,6 +1,5 @@
 {% set version = "2.2.16" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rbibutils
@@ -13,8 +12,7 @@ source:
   sha256: 9c7c0fba47f63b1749005311c7174b40e72d95c863a67b736a84b8ff375a2aaf
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -24,7 +22,9 @@ requirements:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
     - r-xml2                     # [build_platform != target_platform]
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -35,7 +35,6 @@ requirements:
     - r-xml2
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-xml2
 
 test:
