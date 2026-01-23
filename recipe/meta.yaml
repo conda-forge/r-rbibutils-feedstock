@@ -1,4 +1,4 @@
-{% set version = "2.4" %}
+{% set version = "2.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rbibutils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rbibutils/rbibutils_{{ version }}.tar.gz
-  sha256: 007e7a28fabc8c799d2c9cd633077349396257bb4e598a864514e19fc0f3215a
+  sha256: da313d920a0f35ffdf30a54929ba8904b2b5a0d7f11a519db8674148129c8f32
 
 build:
   number: 0
